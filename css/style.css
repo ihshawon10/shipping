@@ -1,0 +1,590 @@
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #7f7f7f;
+    background: #e8e8e8;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: #ffffff;
+    outline: medium none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #2c303e;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 27px;
+    color: #7f7f7f;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* button style */
+
+.btn {
+    -moz-user-select: none;
+    background: #fd4e98;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 119px;
+    height: 50px;
+    border-radius: none;
+}
+
+.btn.btn-back {
+    width: 119px;
+    height: 50px;
+    background: #aeacad;
+}
+
+.btn.btn-con {
+    width: 119px;
+    height: 50px;
+    background: #fd4e98;
+    margin-right: 46px;
+    margin-left: 16px;
+}
+
+.btn.btn-back:hover {
+    transform: translateY(-5px);
+}
+
+.btn.btn-con:hover {
+    transform: translateY(-5px);
+}
+
+/* has-error */
+.has-error {
+
+    border-color: #FD4E98;
+    /* background-color: #ffff99; */
+}
+.text-error{
+    color: #fd4e98;
+}
+
+/* Box */
+.box {
+    background: #fff;
+    margin: 0 auto;
+}
+
+.nav-item {
+    position: relative;
+    transition: 3s ease-out;
+}
+
+.active_tab {
+    width: 384px;
+    height: 89px;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.inactive_tab {
+    width: 257px;
+    height: 75px;
+    background: #f1f1f1;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+.active_tab .circle-bg {
+    height: 38px;
+    width: 38px;
+    background-color: #FD4E98;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+
+.active_tab::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+    width: 97.5%;
+    height: 4px;
+    background: #fe509a;
+}
+
+.inactive_tab .circle-bg {
+    height: 30px;
+    width: 30px;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.active_tab .text {
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: #fd4e98;
+    transition: .4s ease;
+}
+
+.inactive_tab .text {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0 10px 10px;
+    font-weight: normal;
+    color: #a1a1a1;
+    font-size: 20px;
+    text-align: left;
+    color: #a1a1a1;
+}
+
+.inactive_tab {
+    cursor: not-allowed;
+}
+
+/* form */
+.form-group {
+    padding: 20px 50px 0px 50px;
+}
+
+.form-group input {
+    height: 58px;
+    background: #f1f1f1;
+}
+
+.form-group.userinput input {
+    display: inline-block;
+    width: 80px;
+    height: 58px;
+    margin: 5px 5px 0 0;
+    text-align: center;
+    background: #f1f1f1;
+    border: none;
+    color: #fd4e98;
+    outline: none;
+}
+
+.form-group label {
+    font-size: 20px;
+    display: block;
+}
+
+/* custom-select  */
+.custom-select {
+
+    height: 58px;
+    display: inline-block;
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f1f1f1 url(../img/download.svg) right 0.75rem center / 8px 10px no-repeat;
+}
+
+/* month select */
+.month-select {
+    width: 200px;
+    height: 58px;
+    display: inline-block;
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f1f1f1 url(../img/download.svg) right 0.75rem center / 8px 10px no-repeat;
+}
+
+/* custom checkbox */
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box label {
+    font-size: 22px;
+}
+
+.check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin: auto;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+}
+
+.check-box:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.check-box input:checked~.checkmark {
+    background-color: #FD4E98;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-box .checkmark:after {
+    left: 9px;
+    top: 1px;
+    width: 12px;
+    height: 21px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* custom radio button */
+.radio-button {
+    display: inline-block;
+    position: relative;
+    padding-left: 90px;
+    padding-top: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-button .img_1 {
+    height: 50px;
+    width: 50px;
+}
+
+.radio-button .img_2 {
+    height: 64px;
+    width: 64px;
+    margin-left: -35px;
+}
+
+/* custom radio1 button */
+.radio1 {
+    position: absolute;
+    top: 49px;
+    left: 50px;
+    height: 31px;
+    width: 31px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-button:hover input~.radio1 {
+    background-color: #ccc;
+}
+
+.radio-button input:checked~.radio1 {
+    background-color: #FD4E98;
+}
+
+.radio1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-button input:checked~.radio1:after {
+    display: block;
+}
+
+.radio-button .radio1::after {
+    top: 11px;
+    left: 11px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* custom radio2 button */
+.radio2 {
+    position: absolute;
+    top: 55px;
+    left: 14px;
+    height: 31px;
+    width: 31px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-button:hover input~.radio2 {
+    background-color: #ccc;
+}
+
+.radio-button input:checked~.radio2 {
+    background-color: #FD4E98;
+}
+
+.radio2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-button input:checked~.radio2:after {
+    display: block;
+}
+
+.radio-button .radio2::after {
+    top: 11px;
+    left: 11px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* toggle */
+.toggle {
+    position: relative;
+    display: inline;
+    margin-left: 33px;
+}
+
+.toggle .off-toggle {
+    bottom: 4px;
+    right: 78px;
+}
+
+.toggle .on-toggle {
+    bottom: 4px;
+    right: 14px;
+    color: #fff;
+}
+
+.toggle label {
+    position: absolute;
+    color: #5e5e5e;
+    font-weight: 500;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.toggle .text {
+    position: relative;
+    top: -20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+.toggle input {
+    position: relative;
+    width: 127px;
+    height: 45px;
+    background-color: #daddda;
+    appearance: none;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.toggle input::before {
+    position: absolute;
+    content: "";
+    left: 60px;
+    top: 5px;
+    width: 63px;
+    height: 37px;
+    background: url('../img/angle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.toggle input:checked {
+    background: #fd4e98;
+}
+
+.toggle input:checked::before {
+    left: 1px;
+}
